@@ -4,285 +4,216 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Contact | Nails by Zittah</title>
+    <title>Contact Nails by Zittah | Book a Nail Appointment</title>
+
+    <meta name="description"
+        content="Contact Nails by Zittah through WhatsApp or phone to ask about nail services and appointments. Call or WhatsApp +254 798 573 731.">
+
+    <meta name="keywords"
+        content="contact nail technician Kenya, book nails Kenya, Nails by Zittah contact, nail appointment Kenya">
+
+    <meta name="author" content="Nails by Zittah">
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical"
+        href="https://nailsbyzittah.netlify.app/contact.html">
 
     <link rel="stylesheet" href="style.css">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Contact Nails by Zittah">
+    <meta property="og:description"
+        content="Get in touch with Nails by Zittah and arrange your next nail appointment.">
+    <meta property="og:url"
+        content="https://nailsbyzittah.netlify.app/contact.html">
+    <meta property="og:image"
+        content="https://nailsbyzittah.netlify.app/images/home-nails.jpg">
+
+    <link rel="icon" href="images/home-nails.jpg" type="image/jpeg">
 </head>
 
 <body>
 
-<nav class="navbar">
+<header class="navbar">
+    <a href="index.html" class="logo">
+        <span>NBZ</span>
+        Nails by Zittah
+    </a>
 
-    <div class="container nav-inner">
+    <button class="menu-toggle">☰</button>
 
-        <a href="index.html" class="logo">
-            Nails <span>by Zittah</span>
-        </a>
+    <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="shapes.html">Shapes</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="booking.html" class="nav-book">Book Now</a>
+    </nav>
+</header>
 
-        <div class="nav-links">
-
-            <a href="index.html">Home</a>
-            <a href="services.html">Services</a>
-            <a href="shapes.html">Shapes</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="about.html">About</a>
-            <a href="contact.html" class="active">Contact</a>
-            <a href="booking.html" class="nav-book">Book Now</a>
-
-        </div>
-
-    </div>
-
-</nav>
+<main>
 
 <section class="page-hero">
-
-    <div class="container">
-
-        <div class="eyebrow">GET IN TOUCH</div>
-
-        <h1>Contact Zittah</h1>
-
-        <p>
-            Have a question? I'd love to hear from you.
-        </p>
-
-    </div>
-
+    <p class="eyebrow">GET IN TOUCH</p>
+    <h1>Contact Us</h1>
+    <p>
+        Have a question or ready to book your nails?
+        Send us a message.
+    </p>
 </section>
 
-<section class="section">
+<section class="contact-section">
 
-    <div class="container contact-grid">
+    <div class="contact-info">
 
-        <div class="contact-box">
+        <p class="eyebrow">CONTACT</p>
 
-            <div class="eyebrow">CONTACT ME</div>
+        <h2>Let's Talk Nails</h2>
 
-            <h2>Let's Talk Nails</h2>
+        <p>
+            The easiest way to reach Nails by Zittah is through
+            WhatsApp.
+        </p>
 
-            <div class="contact-item">
-
-                <strong>WhatsApp</strong>
-
-                <a
-                    href="https://wa.me/254798573731"
-                    target="_blank">
-                    +254 798 573 731
-                </a>
-
-            </div>
-
-            <div class="contact-item">
-
-                <strong>Phone</strong>
-
+        <div class="contact-card">
+            <span>☏</span>
+            <div>
+                <strong>Phone / WhatsApp</strong>
                 <a href="tel:+254798573731">
                     +254 798 573 731
                 </a>
-
             </div>
-
-            <div class="contact-item">
-
-                <strong>Appointments</strong>
-
-                <p>
-                    Contact me to discuss your preferred
-                    service, shape and appointment time.
-                </p>
-
-            </div>
-
-            <br>
-
-            <a
-                href="https://wa.me/254798573731"
-                target="_blank"
-                class="btn btn-primary">
-                Chat on WhatsApp
-            </a>
-
         </div>
 
-        <div class="contact-box">
+        <a
+            href="https://wa.me/254798573731?text=Hello%20Nails%20by%20Zittah%2C%20I%20would%20like%20to%20make%20an%20appointment."
+            target="_blank"
+            rel="noopener"
+            class="btn btn-primary">
+            Chat on WhatsApp
+        </a>
 
-            <div class="eyebrow">SEND A MESSAGE</div>
+    </div>
 
-            <h2>Message Me</h2>
+    <div class="contact-form-box">
 
-            <form id="contactForm">
+        <h2>Send a Message</h2>
 
-                <div class="form-group">
+        <form id="contactForm">
 
-                    <label>Your Name</label>
+            <label for="name">Your Name</label>
+            <input
+                type="text"
+                id="name"
+                required
+                placeholder="Enter your name">
 
-                    <input
-                        type="text"
-                        id="name"
-                        required
-                        placeholder="Enter your name">
+            <label for="phone">Phone Number</label>
+            <input
+                type="tel"
+                id="phone"
+                required
+                placeholder="07XX XXX XXX">
 
-                </div>
+            <label for="message">Message</label>
+            <textarea
+                id="message"
+                rows="6"
+                required
+                placeholder="Tell us what you would like..."></textarea>
 
-                <div class="form-group">
+            <button type="submit" class="btn btn-primary">
+                Send via WhatsApp
+            </button>
 
-                    <label>Phone Number</label>
-
-                    <input
-                        type="tel"
-                        id="phone"
-                        required
-                        placeholder="07XXXXXXXX">
-
-                </div>
-
-                <div class="form-group">
-
-                    <label>Service</label>
-
-                    <select id="service">
-
-                        <option value="Gel on Natural Nails">
-                            Gel on Natural Nails
-                        </option>
-
-                        <option value="Tips + Gel">
-                            Tips + Gel
-                        </option>
-
-                        <option value="Nail Shape">
-                            Nail Shape
-                        </option>
-
-                        <option value="Other">
-                            Other
-                        </option>
-
-                    </select>
-
-                </div>
-
-                <div class="form-group">
-
-                    <label>Message</label>
-
-                    <textarea
-                        id="message"
-                        placeholder="Write your message..."></textarea>
-
-                </div>
-
-                <button
-                    type="submit"
-                    class="btn btn-primary">
-                    Send on WhatsApp
-                </button>
-
-            </form>
-
-        </div>
+        </form>
 
     </div>
 
 </section>
 
-<div class="cta">
+</main>
 
-    <h2>Ready to Book?</h2>
-
-    <p>
-        Choose your service and preferred appointment details.
-    </p>
-
-    <a href="booking.html" class="btn btn-primary">
-        Book Appointment
-    </a>
-
-</div>
+<a class="whatsapp-float"
+   href="https://wa.me/254798573731"
+   target="_blank"
+   rel="noopener">
+    <span>☏</span>
+</a>
 
 <footer>
+    <div class="footer-content">
 
-    <div class="container">
-
-        <div class="footer-grid">
-
-            <div>
-                <h3>Nails by Zittah</h3>
-                <p>Beautiful nails. Beautiful confidence.</p>
-            </div>
-
-            <div class="footer-links">
-                <h4>Pages</h4>
-                <a href="index.html">Home</a>
-                <a href="services.html">Services</a>
-                <a href="gallery.html">Gallery</a>
-            </div>
-
-            <div>
-                <h4>WhatsApp</h4>
-                <p>+254 798 573 731</p>
-            </div>
-
+        <div>
+            <a href="index.html" class="footer-logo">
+                Nails by Zittah
+            </a>
+            <p>Beautiful nails. Beautiful confidence.</p>
         </div>
 
-        <div class="copyright">
-            © 2026 Nails by Zittah. All Rights Reserved.
+        <div>
+            <h4>Explore</h4>
+            <a href="services.html">Services</a>
+            <a href="shapes.html">Shapes</a>
+            <a href="gallery.html">Gallery</a>
+        </div>
+
+        <div>
+            <h4>Quick Links</h4>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="booking.html">Book Now</a>
+        </div>
+
+        <div>
+            <h4>Contact</h4>
+            <a href="tel:+254798573731">+254 798 573 731</a>
+            <a href="https://wa.me/254798573731">WhatsApp</a>
         </div>
 
     </div>
 
+    <div class="copyright">
+        © 2026 Nails by Zittah. All rights reserved.
+    </div>
 </footer>
 
-<a
-    href="https://wa.me/254798573731"
-    class="whatsapp"
-    target="_blank">
-    ☎
-</a>
-
 <script>
+const menuToggle = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector(".nav-links");
 
-document
-.getElementById("contactForm")
-.addEventListener("submit", function(event) {
+menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+});
+
+document.getElementById("contactForm").addEventListener("submit", function(event) {
 
     event.preventDefault();
 
-    const name =
-        document.getElementById("name").value;
-
-    const phone =
-        document.getElementById("phone").value;
-
-    const service =
-        document.getElementById("service").value;
-
-    const message =
-        document.getElementById("message").value;
+    const name = document.getElementById("name").value;
+    const phone = document.getElementById("phone").value;
+    const message = document.getElementById("message").value;
 
     const whatsappMessage =
-`Hello Zittah! 💗
+`Hello Nails by Zittah,
 
-I would like to contact you.
+My name is ${name}.
 
-Name: ${name}
 Phone: ${phone}
-Service: ${service}
 
 Message:
-${message || "No additional message."}
+${message}
 
-Thank you!`;
+I would like to know more about your nail services.`;
 
     window.open(
         "https://wa.me/254798573731?text=" +
         encodeURIComponent(whatsappMessage),
         "_blank"
     );
-
 });
-
 </script>
 
 </body>

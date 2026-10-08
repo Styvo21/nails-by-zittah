@@ -4,464 +4,259 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Gallery | Nails by Zittah</title>
+    <title>Nail Gallery | Nail Design Inspiration | Nails by Zittah</title>
+
+    <meta name="description"
+        content="Explore the Nails by Zittah nail gallery featuring beautiful gel, almond, square, stiletto and luxury nail design inspiration.">
+
+    <meta name="keywords"
+        content="nail gallery Kenya, nail designs, nail inspiration, gel nail designs, almond nails, square nails, stiletto nails, Nails by Zittah">
+
+    <meta name="author" content="Nails by Zittah">
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical"
+        href="https://nailsbyzittah.netlify.app/gallery.html">
 
     <link rel="stylesheet" href="style.css">
 
-    <style>
-        .gallery-intro {
-            text-align: center;
-            max-width: 750px;
-            margin: 0 auto 40px;
-        }
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Nail Gallery | Nails by Zittah">
+    <meta property="og:description"
+        content="Explore beautiful nail designs and find inspiration for your next appointment.">
+    <meta property="og:url"
+        content="https://nailsbyzittah.netlify.app/gallery.html">
+    <meta property="og:image"
+        content="https://nailsbyzittah.netlify.app/images/home-nails.jpg">
 
-        .gallery-intro p {
-            color: var(--grey);
-        }
-
-        .gallery-card.hidden {
-            display: none;
-        }
-
-        .lightbox {
-            position: fixed;
-            inset: 0;
-            background: rgba(20, 10, 15, .92);
-            display: none;
-            align-items: center;
-            justify-content: center;
-            z-index: 5000;
-            padding: 30px;
-        }
-
-        .lightbox.show {
-            display: flex;
-        }
-
-        .lightbox img {
-            max-width: 900px;
-            max-height: 85vh;
-            width: auto;
-            border-radius: 20px;
-            box-shadow: 0 30px 100px rgba(0,0,0,.4);
-        }
-
-        .close-lightbox {
-            position: absolute;
-            top: 25px;
-            right: 30px;
-            color: white;
-            font-size: 40px;
-            cursor: pointer;
-        }
-    </style>
+    <link rel="icon" href="images/home-nails.jpg" type="image/jpeg">
 </head>
 
 <body>
 
-<nav class="navbar">
-    <div class="container nav-inner">
+<header class="navbar">
+    <a href="index.html" class="logo">
+        <span>NBZ</span>
+        Nails by Zittah
+    </a>
 
-        <a href="index.html" class="logo">
-            Nails <span>by Zittah</span>
-        </a>
+    <button class="menu-toggle">☰</button>
 
-        <div class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="services.html">Services</a>
-            <a href="shapes.html">Shapes</a>
-            <a href="gallery.html" class="active">Gallery</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-            <a href="booking.html" class="nav-book">Book Now</a>
-        </div>
+    <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="shapes.html">Shapes</a>
+        <a href="gallery.html" class="active">Gallery</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="booking.html" class="nav-book">Book Now</a>
+    </nav>
+</header>
 
-    </div>
-</nav>
+<main>
 
 <section class="page-hero">
-
-    <div class="container">
-
-        <div class="eyebrow">NAIL INSPIRATION</div>
-
-        <h1>My Gallery</h1>
-
-        <p>
-            Explore beautiful nail designs and find inspiration
-            for your next appointment.
-        </p>
-
-    </div>
-
+    <p class="eyebrow">NAIL INSPIRATION</p>
+    <h1>Our Gallery</h1>
+    <p>
+        Find inspiration for your next nail appointment.
+    </p>
 </section>
 
 <section class="section">
 
-    <div class="container">
+    <div class="filters">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="natural">Natural</button>
+        <button class="filter" data-filter="gel">Gel</button>
+        <button class="filter" data-filter="shape">Shapes</button>
+        <button class="filter" data-filter="luxury">Luxury</button>
+    </div>
 
-        <div class="gallery-intro">
+    <div class="gallery-grid gallery-page">
 
-            <h2>Beautiful Nails, Beautiful Details</h2>
-
-            <p>
-                From elegant almond designs to bold stiletto
-                styles, choose a look that feels like you.
-            </p>
-
+        <div class="gallery-card" data-category="natural">
+            <img
+                src="images/home-nails.jpg"
+                alt="Natural nail design by Nails by Zittah"
+                loading="lazy">
+            <div class="gallery-overlay">
+                <span>Natural</span>
+            </div>
         </div>
 
-        <div class="gallery-filters">
-
-            <button class="filter-btn active" data-filter="all">
-                All
-            </button>
-
-            <button class="filter-btn" data-filter="natural">
-                Natural
-            </button>
-
-            <button class="filter-btn" data-filter="gel">
-                Gel
-            </button>
-
-            <button class="filter-btn" data-filter="shape">
-                Nail Shapes
-            </button>
-
-            <button class="filter-btn" data-filter="luxury">
-                Luxury
-            </button>
-
+        <div class="gallery-card" data-category="gel">
+            <img
+                src="https://images.unsplash.com/photo-1610992015732-2449b76344bc?auto=format&fit=crop&w=1000&q=85"
+                alt="Gel nail design"
+                loading="lazy">
+            <div class="gallery-overlay">
+                <span>Gel</span>
+            </div>
         </div>
 
-        <div class="gallery-grid">
-
-            <!-- ALMOND -->
-
-            <div class="gallery-card" data-category="natural shape">
-
-                <img
-                    src="https://thepinkissue.com/wp-content/uploads/2025/09/Almond-fall-nail-ideas.jpg"
-                    alt="Almond Nails">
-
-                <div class="gallery-overlay"></div>
-
-                <div class="gallery-info">
-
-                    <h3>Almond Nails</h3>
-
-                    <p>
-                        Elegant and feminine almond shape.
-                    </p>
-
-                    <a
-                        href="booking.html?shape=Almond"
-                        class="view-btn">
-                        Book Almond
-                    </a>
-
-                </div>
-
+        <div class="gallery-card" data-category="shape">
+            <img
+                src="https://thepinkissue.com/wp-content/uploads/2025/09/Almond-fall-nail-ideas.jpg"
+                alt="Almond nail shape"
+                loading="lazy">
+            <div class="gallery-overlay">
+                <span>Almond</span>
             </div>
-
-            <!-- STILETTO -->
-
-            <div class="gallery-card" data-category="luxury shape">
-
-                <img
-                    src="https://nailsforconfidence.com/wp-content/uploads/2025/07/5-fall-stiletto-nail-art-design.jpg"
-                    alt="Stiletto Nails">
-
-                <div class="gallery-overlay"></div>
-
-                <div class="gallery-info">
-
-                    <h3>Stiletto Nails</h3>
-
-                    <p>
-                        Bold, dramatic and stylish.
-                    </p>
-
-                    <a
-                        href="booking.html?shape=Stiletto"
-                        class="view-btn">
-                        Book Stiletto
-                    </a>
-
-                </div>
-
-            </div>
-
-            <!-- SQUARE -->
-
-            <div class="gallery-card" data-category="gel shape">
-
-                <img
-                    src="https://www.instyle.com/thmb/RQlxj5Fkp6_SUbH6SBDZaYMpquI=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Squarenails-dcefe777703c4f168eab9023bb034ae7.jpg"
-                    alt="Square Nails">
-
-                <div class="gallery-overlay"></div>
-
-                <div class="gallery-info">
-
-                    <h3>Square Nails</h3>
-
-                    <p>
-                        Clean and classic square shape.
-                    </p>
-
-                    <a
-                        href="booking.html?shape=Square"
-                        class="view-btn">
-                        Book Square
-                    </a>
-
-                </div>
-
-            </div>
-
-            <!-- GEL -->
-
-            <div class="gallery-card" data-category="gel natural">
-
-                <img
-                    src="https://images.unsplash.com/photo-1610992015732-2449b76344bc?auto=format&fit=crop&w=1000&q=85"
-                    alt="Gel manicure">
-
-                <div class="gallery-overlay"></div>
-
-                <div class="gallery-info">
-
-                    <h3>Glossy Gel</h3>
-
-                    <p>
-                        Clean and glossy gel finish.
-                    </p>
-
-                    <a
-                        href="booking.html?service=Gel%20on%20Natural%20Nails"
-                        class="view-btn">
-                        Book Gel
-                    </a>
-
-                </div>
-
-            </div>
-
-            <!-- LUXURY -->
-
-            <div class="gallery-card" data-category="luxury gel">
-
-                <img
-                    src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=1000&q=85"
-                    alt="Luxury nail design">
-
-                <div class="gallery-overlay"></div>
-
-                <div class="gallery-info">
-
-                    <h3>Luxury Nails</h3>
-
-                    <p>
-                        Glamorous nails for special moments.
-                    </p>
-
-                    <a
-                        href="booking.html"
-                        class="view-btn">
-                        Book Appointment
-                    </a>
-
-                </div>
-
-            </div>
-
-            <!-- BEAUTY -->
-
-            <div class="gallery-card" data-category="natural luxury">
-
-                <img
-                    src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?auto=format&fit=crop&w=1000&q=85"
-                    alt="Beautiful manicure">
-
-                <div class="gallery-overlay"></div>
-
-                <div class="gallery-info">
-
-                    <h3>Elegant Finish</h3>
-
-                    <p>
-                        Simple, elegant and beautiful.
-                    </p>
-
-                    <a
-                        href="booking.html"
-                        class="view-btn">
-                        Book Appointment
-                    </a>
-
-                </div>
-
-            </div>
-
         </div>
 
+        <div class="gallery-card" data-category="shape">
+            <img
+                src="https://www.instyle.com/thmb/RQlxj5Fkp6_SUbH6SBDZaYMpquI=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Squarenails-dcefe777703c4f168eab9023bb034ae7.jpg"
+                alt="Square nail shape"
+                loading="lazy">
+            <div class="gallery-overlay">
+                <span>Square</span>
+            </div>
+        </div>
+
+        <div class="gallery-card" data-category="shape">
+            <img
+                src="https://nailsforconfidence.com/wp-content/uploads/2025/07/5-fall-stiletto-nail-art-design.jpg"
+                alt="Stiletto nail shape"
+                loading="lazy">
+            <div class="gallery-overlay">
+                <span>Stiletto</span>
+            </div>
+        </div>
+
+        <div class="gallery-card" data-category="luxury">
+            <img
+                src="https://images.unsplash.com/photo-1610992015732-2449b76344bc?auto=format&fit=crop&w=1000&q=85"
+                alt="Luxury nail design"
+                loading="lazy">
+            <div class="gallery-overlay">
+                <span>Luxury</span>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="gallery-note">
+        <p>
+            See something you love? Send us the design and let us
+            know what you'd like for your appointment.
+        </p>
+
+        <a href="booking.html" class="btn btn-primary">
+            Book Your Look
+        </a>
     </div>
 
 </section>
 
-<div class="cta">
+</main>
 
-    <h2>See Something You Love?</h2>
-
-    <p>
-        Save the design and bring your inspiration
-        to your appointment.
-    </p>
-
-    <a href="booking.html" class="btn btn-primary">
-        Book Your Appointment
-    </a>
-
+<div class="lightbox" id="lightbox">
+    <button class="lightbox-close">&times;</button>
+    <img id="lightboxImage" src="" alt="Nail design preview">
 </div>
 
+<a class="whatsapp-float"
+   href="https://wa.me/254798573731"
+   target="_blank"
+   rel="noopener">
+    <span>☏</span>
+</a>
+
 <footer>
+    <div class="footer-content">
 
-    <div class="container">
-
-        <div class="footer-grid">
-
-            <div>
-                <h3>Nails by Zittah</h3>
-
-                <p>
-                    Beautiful nails. Beautiful confidence.
-                </p>
-            </div>
-
-            <div class="footer-links">
-
-                <h4>Quick Links</h4>
-
-                <a href="index.html">Home</a>
-                <a href="services.html">Services</a>
-                <a href="shapes.html">Shapes</a>
-                <a href="booking.html">Book Now</a>
-
-            </div>
-
-            <div>
-
-                <h4>WhatsApp</h4>
-
-                <p>+254 798 573 731</p>
-
-            </div>
-
+        <div>
+            <a href="index.html" class="footer-logo">
+                Nails by Zittah
+            </a>
+            <p>Beautiful nails. Beautiful confidence.</p>
         </div>
 
-        <div class="copyright">
-            © 2026 Nails by Zittah. All Rights Reserved.
+        <div>
+            <h4>Explore</h4>
+            <a href="services.html">Services</a>
+            <a href="shapes.html">Shapes</a>
+            <a href="gallery.html">Gallery</a>
+        </div>
+
+        <div>
+            <h4>Quick Links</h4>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="booking.html">Book Now</a>
+        </div>
+
+        <div>
+            <h4>Contact</h4>
+            <a href="tel:+254798573731">+254 798 573 731</a>
+            <a href="https://wa.me/254798573731">WhatsApp</a>
         </div>
 
     </div>
 
+    <div class="copyright">
+        © 2026 Nails by Zittah. All rights reserved.
+    </div>
 </footer>
 
-<a
-    href="https://wa.me/254798573731"
-    class="whatsapp"
-    target="_blank">
-    ☎
-</a>
-
-<div class="lightbox" id="lightbox">
-
-    <span class="close-lightbox" id="closeLightbox">
-        &times;
-    </span>
-
-    <img id="lightboxImage" src="" alt="Nail design">
-
-</div>
-
 <script>
+const menuToggle = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector(".nav-links");
 
-const filterButtons =
-    document.querySelectorAll(".filter-btn");
+menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+});
 
-const galleryCards =
-    document.querySelectorAll(".gallery-card");
+const filters = document.querySelectorAll(".filter");
+const galleryCards = document.querySelectorAll(".gallery-card");
 
-filterButtons.forEach(button => {
-
+filters.forEach(button => {
     button.addEventListener("click", () => {
 
-        filterButtons.forEach(btn =>
-            btn.classList.remove("active")
-        );
-
+        filters.forEach(item => item.classList.remove("active"));
         button.classList.add("active");
 
         const filter = button.dataset.filter;
 
         galleryCards.forEach(card => {
 
-            const categories =
-                card.dataset.category;
-
-            if (
-                filter === "all" ||
-                categories.includes(filter)
-            ) {
-                card.classList.remove("hidden");
+            if (filter === "all" || card.dataset.category === filter) {
+                card.style.display = "block";
             } else {
-                card.classList.add("hidden");
+                card.style.display = "none";
             }
 
         });
-
     });
-
 });
 
-const lightbox =
-    document.getElementById("lightbox");
+const lightbox = document.getElementById("lightbox");
+const lightboxImage = document.getElementById("lightboxImage");
+const closeLightbox = document.querySelector(".lightbox-close");
 
-const lightboxImage =
-    document.getElementById("lightboxImage");
+galleryCards.forEach(card => {
+    card.addEventListener("click", () => {
 
-const closeLightbox =
-    document.getElementById("closeLightbox");
+        const image = card.querySelector("img");
 
-document.querySelectorAll(".gallery-card img")
-    .forEach(image => {
+        lightboxImage.src = image.src;
+        lightboxImage.alt = image.alt;
 
-        image.addEventListener("click", () => {
-
-            lightboxImage.src = image.src;
-
-            lightbox.classList.add("show");
-
-        });
-
+        lightbox.classList.add("show");
     });
+});
 
 closeLightbox.addEventListener("click", () => {
-
     lightbox.classList.remove("show");
-
 });
 
 lightbox.addEventListener("click", event => {
-
     if (event.target === lightbox) {
         lightbox.classList.remove("show");
     }
-
 });
-
 </script>
 
 </body>

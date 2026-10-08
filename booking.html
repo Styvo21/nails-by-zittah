@@ -1,460 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0">
+    <title>Book a Nail Appointment | Nails by Zittah</title>
 
-    <title>Book Appointment | Nails by Zittah</title>
+    <meta name="description"
+        content="Book your nail appointment with Nails by Zittah. Choose your service, nail shape, preferred date and time, then send your appointment request through WhatsApp.">
+
+    <meta name="keywords"
+        content="book nail appointment Kenya, nail booking, gel nails appointment, tips and gel booking, Nails by Zittah booking">
+
+    <meta name="author" content="Nails by Zittah">
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical"
+        href="https://nailsbyzittah.netlify.app/booking.html">
 
     <link rel="stylesheet" href="style.css">
 
+    <meta property="og:type" content="website">
+    <meta property="og:title"
+        content="Book Your Nail Appointment | Nails by Zittah">
+    <meta property="og:description"
+        content="Choose your nail service, shape, date and preferred time and send your appointment request through WhatsApp.">
+    <meta property="og:url"
+        content="https://nailsbyzittah.netlify.app/booking.html">
+    <meta property="og:image"
+        content="https://nailsbyzittah.netlify.app/images/home-nails.jpg">
+
+    <link rel="icon" href="images/home-nails.jpg" type="image/jpeg">
 </head>
 
 <body>
 
-<nav class="navbar">
+<header class="navbar">
+    <a href="index.html" class="logo">
+        <span>NBZ</span>
+        Nails by Zittah
+    </a>
 
-    <div class="container nav-inner">
+    <button class="menu-toggle">☰</button>
 
-        <a href="index.html" class="logo">
-            Nails <span>by Zittah</span>
-        </a>
+    <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="shapes.html">Shapes</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="booking.html" class="nav-book active-book">Book Now</a>
+    </nav>
+</header>
 
-        <div class="nav-links">
-
-            <a href="index.html">Home</a>
-
-            <a href="services.html">Services</a>
-
-            <a href="shapes.html">Shapes</a>
-
-            <a href="gallery.html">Gallery</a>
-
-            <a href="about.html">About</a>
-
-            <a href="contact.html">Contact</a>
-
-            <a href="booking.html"
-               class="nav-book">
-                Book Now
-            </a>
-
-        </div>
-
-    </div>
-
-</nav>
+<main>
 
 <section class="page-hero">
+    <p class="eyebrow">YOUR NAIL APPOINTMENT</p>
+    <h1>Book Now</h1>
+    <p>
+        Fill in your details and send your appointment request through WhatsApp.
+    </p>
+</section>
 
-    <div class="container">
+<section class="booking-section">
 
-        <div class="eyebrow">YOUR BEAUTY APPOINTMENT</div>
+    <div class="booking-intro">
 
-        <h1>Book Your Appointment</h1>
+        <p class="eyebrow">BOOK YOUR LOOK</p>
+
+        <h2>Let's Create Something Beautiful</h2>
 
         <p>
-            Fill in your details and send your booking
-            request directly to WhatsApp.
+            Choose your preferred service, shape, date and time.
+            Your request will be prepared as a WhatsApp message.
         </p>
 
+        <div class="booking-tip">
+            <strong>♡ Quick & Easy</strong>
+            <p>
+                After submitting this form, WhatsApp will open with
+                your appointment details ready to send.
+            </p>
+        </div>
+
     </div>
 
-</section>
+    <div class="booking-form-box">
 
-<section class="section">
+        <form id="bookingForm">
 
-    <div class="container">
+            <label for="fullName">Full Name</label>
 
-        <div class="booking-wrapper">
+            <input
+                type="text"
+                id="fullName"
+                required
+                placeholder="Enter your full name">
 
-            <div class="section-heading">
+            <label for="phone">Phone Number</label>
 
-                <div class="eyebrow">
-                    BOOK WITH ZITTAH
-                </div>
+            <input
+                type="tel"
+                id="phone"
+                required
+                placeholder="07XX XXX XXX">
 
-                <h2>Let's Create Your Look</h2>
+            <label for="email">Email <span>(optional)</span></label>
 
-                <p>
-                    Complete the form below.
-                    Your request will open in WhatsApp.
-                </p>
+            <input
+                type="email"
+                id="email"
+                placeholder="your@email.com">
 
-            </div>
+            <label for="service">Service</label>
 
-            <form id="bookingForm">
+            <select id="service" required>
+                <option value="">Select a service</option>
+                <option value="Gel on Natural Nails">
+                    Gel on Natural Nails
+                </option>
+                <option value="Tips + Gel">
+                    Tips + Gel
+                </option>
+                <option value="Custom Nail Design">
+                    Custom Nail Design
+                </option>
+            </select>
 
-                <div class="form-group">
+            <label for="shape">Nail Shape</label>
 
-                    <label for="name">
-                        Full Name
-                    </label>
+            <select id="shape">
+                <option value="">Choose a shape</option>
+                <option value="Square">Square</option>
+                <option value="Almond">Almond</option>
+                <option value="Stiletto">Stiletto</option>
+            </select>
 
-                    <input
-                        type="text"
-                        id="name"
-                        required
-                        placeholder="Enter your full name">
+            <label for="date">Preferred Date</label>
 
-                </div>
+            <input
+                type="date"
+                id="date"
+                required>
 
-                <div class="form-group">
+            <label for="time">Preferred Time</label>
 
-                    <label for="phone">
-                        Phone Number
-                    </label>
+            <input
+                type="time"
+                id="time"
+                required>
 
-                    <input
-                        type="tel"
-                        id="phone"
-                        required
-                        placeholder="07XXXXXXXX">
+            <label for="notes">Additional Notes</label>
 
-                </div>
+            <textarea
+                id="notes"
+                rows="5"
+                placeholder="Tell us about the design or style you want..."></textarea>
 
-                <div class="form-group">
+            <button type="submit" class="btn btn-primary full-btn">
+                Send Booking Request on WhatsApp
+            </button>
 
-                    <label for="email">
-                        Email
-                    </label>
-
-                    <input
-                        type="email"
-                        id="email"
-                        placeholder="Optional">
-
-                </div>
-
-                <div class="form-group">
-
-                    <label for="service">
-                        Service
-                    </label>
-
-                    <select id="service" required>
-
-                        <option value="">
-                            Select a service
-                        </option>
-
-                        <option value="Gel on Natural Nails">
-                            Gel on Natural Nails
-                        </option>
-
-                        <option value="Tips + Gel">
-                            Tips + Gel
-                        </option>
-
-                        <option value="Other">
-                            Other
-                        </option>
-
-                    </select>
-
-                </div>
-
-                <div class="form-group">
-
-                    <label for="shape">
-                        Nail Shape
-                    </label>
-
-                    <select id="shape">
-
-                        <option value="">
-                            Select a shape
-                        </option>
-
-                        <option value="Square">
-                            Square
-                        </option>
-
-                        <option value="Almond">
-                            Almond
-                        </option>
-
-                        <option value="Stiletto">
-                            Stiletto
-                        </option>
-
-                        <option value="Not sure">
-                            Not sure
-                        </option>
-
-                    </select>
-
-                </div>
-
-                <div class="form-row">
-
-                    <div class="form-group">
-
-                        <label for="date">
-                            Preferred Date
-                        </label>
-
-                        <input
-                            type="date"
-                            id="date"
-                            required>
-
-                    </div>
-
-                    <div class="form-group">
-
-                        <label for="time">
-                            Preferred Time
-                        </label>
-
-                        <input
-                            type="time"
-                            id="time"
-                            required>
-
-                    </div>
-
-                </div>
-
-                <div class="form-group">
-
-                    <label for="notes">
-                        Additional Notes
-                    </label>
-
-                    <textarea
-                        id="notes"
-                        placeholder="Tell Zittah anything important about your appointment..."></textarea>
-
-                </div>
-
-                <button
-                    type="submit"
-                    class="btn btn-primary">
-
-                    Send Booking Request on WhatsApp
-
-                </button>
-
-            </form>
-
-        </div>
+        </form>
 
     </div>
 
 </section>
 
-<section class="section">
+</main>
 
-    <div class="container">
-
-        <div class="section-heading">
-
-            <div class="eyebrow">
-                BEFORE YOUR APPOINTMENT
-            </div>
-
-            <h2>Booking Tips</h2>
-
-        </div>
-
-        <div class="values">
-
-            <div class="value">
-
-                <div class="value-icon">📅</div>
-
-                <h3>Choose Your Date</h3>
-
-                <p>
-                    Select the date and time
-                    you would prefer.
-                </p>
-
-            </div>
-
-            <div class="value">
-
-                <div class="value-icon">💅</div>
-
-                <h3>Choose Your Style</h3>
-
-                <p>
-                    Select your service and
-                    preferred nail shape.
-                </p>
-
-            </div>
-
-            <div class="value">
-
-                <div class="value-icon">💬</div>
-
-                <h3>Wait for Confirmation</h3>
-
-                <p>
-                    Zittah will respond through
-                    WhatsApp to confirm availability.
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
+<a class="whatsapp-float"
+   href="https://wa.me/254798573731"
+   target="_blank"
+   rel="noopener">
+    <span>☏</span>
+</a>
 
 <footer>
+    <div class="footer-content">
 
-    <div class="container">
-
-        <div class="footer-grid">
-
-            <div>
-
-                <h3>Nails by Zittah</h3>
-
-                <p>
-                    Beautiful nails. Beautiful confidence.
-                </p>
-
-            </div>
-
-            <div class="footer-links">
-
-                <h4>Quick Links</h4>
-
-                <a href="index.html">Home</a>
-                <a href="services.html">Services</a>
-                <a href="shapes.html">Shapes</a>
-                <a href="gallery.html">Gallery</a>
-
-            </div>
-
-            <div>
-
-                <h4>WhatsApp</h4>
-
-                <p>
-                    +254 798 573 731
-                </p>
-
-            </div>
-
+        <div>
+            <a href="index.html" class="footer-logo">
+                Nails by Zittah
+            </a>
+            <p>Beautiful nails. Beautiful confidence.</p>
         </div>
 
-        <div class="copyright">
+        <div>
+            <h4>Explore</h4>
+            <a href="services.html">Services</a>
+            <a href="shapes.html">Shapes</a>
+            <a href="gallery.html">Gallery</a>
+        </div>
 
-            © 2026 Nails by Zittah.
-            All Rights Reserved.
+        <div>
+            <h4>Quick Links</h4>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="booking.html">Book Now</a>
+        </div>
 
+        <div>
+            <h4>Contact</h4>
+            <a href="tel:+254798573731">+254 798 573 731</a>
+            <a href="https://wa.me/254798573731">WhatsApp</a>
         </div>
 
     </div>
 
+    <div class="copyright">
+        © 2026 Nails by Zittah. All rights reserved.
+    </div>
 </footer>
-
-<a
-    href="https://wa.me/254798573731"
-    class="whatsapp"
-    target="_blank">
-    ☎
-</a>
 
 <script>
 
-const params =
-    new URLSearchParams(window.location.search);
+const menuToggle = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector(".nav-links");
 
-const serviceParam =
-    params.get("service");
+menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+});
 
-const shapeParam =
-    params.get("shape");
-
-
-if (serviceParam) {
-
-    const serviceSelect =
-        document.getElementById("service");
-
-    [...serviceSelect.options].forEach(option => {
-
-        if (
-            option.value.toLowerCase() ===
-            serviceParam.toLowerCase()
-        ) {
-            serviceSelect.value =
-                option.value;
-        }
-
-    });
-
-}
-
-
-if (shapeParam) {
-
-    const shapeSelect =
-        document.getElementById("shape");
-
-    [...shapeSelect.options].forEach(option => {
-
-        if (
-            option.value.toLowerCase() ===
-            shapeParam.toLowerCase()
-        ) {
-            shapeSelect.value =
-                option.value;
-        }
-
-    });
-
-}
-
+const dateInput = document.getElementById("date");
 
 const today = new Date();
+const yyyy = today.getFullYear();
+const mm = String(today.getMonth() + 1).padStart(2, "0");
+const dd = String(today.getDate()).padStart(2, "0");
 
-const year =
-    today.getFullYear();
+dateInput.min = `${yyyy}-${mm}-${dd}`;
 
-const month =
-    String(today.getMonth() + 1)
-    .padStart(2, "0");
+const params = new URLSearchParams(window.location.search);
 
-const day =
-    String(today.getDate())
-    .padStart(2, "0");
+const serviceParam = params.get("service");
+const shapeParam = params.get("shape");
 
-document.getElementById("date").min =
-    `${year}-${month}-${day}`;
+if (serviceParam) {
+    document.getElementById("service").value = serviceParam;
+}
 
+if (shapeParam) {
+    document.getElementById("shape").value = shapeParam;
+}
 
-document
-.getElementById("bookingForm")
-.addEventListener("submit", function(event) {
+document.getElementById("bookingForm").addEventListener("submit", function(event) {
 
     event.preventDefault();
 
-    const name =
-        document.getElementById("name").value;
+    const fullName =
+        document.getElementById("fullName").value;
 
     const phone =
         document.getElementById("phone").value;
 
     const email =
-        document.getElementById("email").value;
+        document.getElementById("email").value || "Not provided";
 
     const service =
         document.getElementById("service").value;
 
     const shape =
-        document.getElementById("shape").value;
+        document.getElementById("shape").value || "Not specified";
 
     const date =
         document.getElementById("date").value;
@@ -463,38 +272,33 @@ document
         document.getElementById("time").value;
 
     const notes =
-        document.getElementById("notes").value;
-
+        document.getElementById("notes").value || "None";
 
     const message =
-`Hello Zittah! 💗
+`Hello Nails by Zittah,
 
-I would like to book an appointment.
+I would like to request a nail appointment.
 
-Name: ${name}
+Name: ${fullName}
 Phone: ${phone}
-Email: ${email || "Not provided"}
+Email: ${email}
 
 Service: ${service}
-Nail Shape: ${shape || "Not specified"}
+Nail Shape: ${shape}
 
 Preferred Date: ${date}
 Preferred Time: ${time}
 
 Additional Notes:
-${notes || "None"}
+${notes}
 
-Please let me know if this appointment is available.
-
-Thank you! 💅✨`;
-
+Please let me know if the requested time is available.`;
 
     window.open(
         "https://wa.me/254798573731?text=" +
         encodeURIComponent(message),
         "_blank"
     );
-
 });
 
 </script>
