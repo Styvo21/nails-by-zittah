@@ -1,1279 +1,403 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
+    <!-- BASIC SEO -->
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0">
+    <title>Nails by Zittah | Nail Artist & Nail Services in Kenya</title>
 
-    <title>
-        Nails by Zittah | Beautiful Nails, Beautiful Confidence
-    </title>
+    <meta name="description"
+        content="Nails by Zittah offers beautiful gel nails, tips and gel, almond, square and stiletto nail designs. Explore nail services and book your appointment today.">
 
-    <meta
-        name="description"
-        content="Nails by Zittah - beautiful, elegant and stylish nail designs. Book your next nail appointment today.">
+    <meta name="keywords"
+        content="Nails by Zittah, nail artist Kenya, nail technician Kenya, gel nails Kenya, tips and gel Kenya, almond nails, square nails, stiletto nails, nail designs Kenya">
 
+    <meta name="author" content="Nails by Zittah">
+
+    <!-- SEARCH ENGINE INSTRUCTIONS -->
+    <meta name="robots" content="index, follow">
+
+    <!-- CANONICAL URL -->
+    <link rel="canonical" href="https://nailsbyzittah.netlify.app/">
+
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- STYLESHEET -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- SOCIAL MEDIA / FACEBOOK / WHATSAPP PREVIEW -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Nails by Zittah | Beautiful Nail Designs">
+    <meta property="og:description"
+        content="Discover beautiful nail designs, gel nails, tips and gel, almond, square and stiletto styles by Nails by Zittah.">
+    <meta property="og:url" content="https://nailsbyzittah.netlify.app/">
+    <meta property="og:image"
+        content="https://nailsbyzittah.netlify.app/images/home-nails.jpg">
+    <meta property="og:site_name" content="Nails by Zittah">
+
+    <!-- TWITTER / X -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Nails by Zittah | Nail Artist & Nail Services">
+    <meta name="twitter:description"
+        content="Beautiful nail designs, gel nails and custom nail services by Nails by Zittah.">
+    <meta name="twitter:image"
+        content="https://nailsbyzittah.netlify.app/images/home-nails.jpg">
+
+    <!-- FAVICON -->
+    <link rel="icon" href="images/home-nails.jpg" type="image/jpeg">
+
+    <!-- GOOGLE SEARCH CONSOLE VERIFICATION -->
+    <!-- KEEP YOUR GOOGLE VERIFICATION FILE IN THE ROOT OF THE WEBSITE -->
+
+    <!-- LOCAL BUSINESS STRUCTURED DATA -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BeautySalon",
+        "name": "Nails by Zittah",
+        "url": "https://nailsbyzittah.netlify.app/",
+        "telephone": "+254798573731",
+        "description": "Professional nail services including gel nails, tips and gel, almond, square and stiletto nail designs.",
+        "image": "https://nailsbyzittah.netlify.app/images/home-nails.jpg",
+        "priceRange": "$$",
+        "sameAs": []
+    }
+    </script>
 
     <style>
 
-        /* =========================
-           HOME PAGE
-        ========================= */
+        /* HOME PAGE */
 
         .home-hero {
-            min-height: 760px;
-            display: flex;
+            min-height: 88vh;
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 50px;
             align-items: center;
-            position: relative;
-            overflow: hidden;
-
+            padding: 80px 8%;
             background:
-                radial-gradient(
-                    circle at 10% 20%,
-                    rgba(239,181,198,.55),
-                    transparent 30%
-                ),
-
-                radial-gradient(
-                    circle at 90% 80%,
-                    rgba(168,139,196,.28),
-                    transparent 32%
-                ),
-
+                radial-gradient(circle at top left, #f9dfe8, transparent 40%),
+                radial-gradient(circle at bottom right, #eee4f7, transparent 40%),
                 #fff8f5;
         }
 
-        .home-hero::before {
-            content: "";
-            position: absolute;
-
-            width: 500px;
-            height: 500px;
-
-            border-radius: 50%;
-
-            background: rgba(239,181,198,.18);
-
-            top: -200px;
-            right: -150px;
-
-            filter: blur(5px);
-        }
-
-        .home-hero-grid {
-
-            width: min(1200px, 92%);
-
-            margin: auto;
-
-            display: grid;
-
-            grid-template-columns:
-                1fr
-                1fr;
-
-            gap: 70px;
-
-            align-items: center;
-
-            position: relative;
-
-            z-index: 2;
-        }
-
-        .home-content {
-            animation:
-                homeText .9s ease forwards;
-        }
-
-        @keyframes homeText {
-
-            from {
-                opacity: 0;
-                transform: translateY(35px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-
+        .home-hero-content {
+            max-width: 650px;
         }
 
         .home-badge {
-
-            display: inline-flex;
-
-            align-items: center;
-
-            gap: 8px;
-
-            padding:
-                9px
-                16px;
-
-            border-radius: 30px;
-
-            background: rgba(255,255,255,.75);
-
-            border:
-                1px solid
-                rgba(212,127,153,.2);
-
-            color: var(--dark-pink);
-
-            font-size: 12px;
-
+            display: inline-block;
+            padding: 10px 18px;
+            border-radius: 50px;
+            background: #ffffff;
+            color: #b85f7d;
             font-weight: 700;
-
-            letter-spacing: 1.5px;
-
-            margin-bottom: 22px;
-
-            box-shadow:
-                0 10px 35px
-                rgba(80,45,60,.06);
+            font-size: 13px;
+            letter-spacing: 2px;
+            box-shadow: 0 10px 30px rgba(80, 45, 60, 0.08);
+            margin-bottom: 20px;
         }
 
-        .home-content h1 {
-
-            font-family:
-                "Cormorant Garamond",
-                serif;
-
-            font-size:
-                clamp(
-                    58px,
-                    7vw,
-                    92px
-                );
-
-            line-height:
-                .88;
-
-            margin-bottom: 28px;
-
-            color: var(--dark);
+        .home-hero h1 {
+            font-family: "Cormorant Garamond", serif;
+            font-size: clamp(55px, 7vw, 95px);
+            line-height: 0.9;
+            margin: 0 0 25px;
+            color: #30252a;
         }
 
-        .home-content h1 span {
-
-            display: block;
-
-            color:
-                var(--dark-pink);
-
-            font-style:
-                italic;
-
-            font-weight:
-                500;
+        .home-hero h1 span {
+            color: #d47f99;
         }
 
-        .home-content p {
-
-            max-width:
-                550px;
-
-            color:
-                var(--grey);
-
-            font-size:
-                17px;
-
-            line-height:
-                1.8;
-
-            margin-bottom:
-                32px;
+        .home-hero p {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #75676c;
+            max-width: 560px;
+            margin-bottom: 35px;
         }
 
         .home-buttons {
-
-            display:
-                flex;
-
-            gap:
-                14px;
-
-            flex-wrap:
-                wrap;
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
         }
 
-        .home-primary {
-
-            background:
-                var(--dark-pink);
-
-            color:
-                white;
-
-            padding:
-                16px 27px;
-
-            border-radius:
-                40px;
-
-            font-weight:
-                700;
-
-            display:
-                inline-flex;
-
-            align-items:
-                center;
-
-            gap:
-                8px;
-
-            transition:
-                .3s;
-
-            box-shadow:
-                0 15px 35px
-                rgba(184,95,125,.25);
+        .home-image-wrap {
+            position: relative;
         }
 
-        .home-primary:hover {
-
-            transform:
-                translateY(-4px);
-
-            background:
-                var(--purple);
+        .home-image-wrap img {
+            width: 100%;
+            height: 600px;
+            object-fit: cover;
+            border-radius: 35px;
+            box-shadow: 0 30px 80px rgba(80, 45, 60, 0.18);
         }
 
-        .home-secondary {
-
-            border:
-                1px solid
-                var(--dark-pink);
-
-            color:
-                var(--dark-pink);
-
-            padding:
-                15px 25px;
-
-            border-radius:
-                40px;
-
-            font-weight:
-                700;
-
-            transition:
-                .3s;
+        .home-floating-card {
+            position: absolute;
+            left: -30px;
+            bottom: 30px;
+            background: #ffffff;
+            padding: 20px 25px;
+            border-radius: 20px;
+            box-shadow: 0 20px 50px rgba(80, 45, 60, 0.15);
         }
 
-        .home-secondary:hover {
-
-            background:
-                var(--dark-pink);
-
-            color:
-                white;
-
-            transform:
-                translateY(-4px);
+        .home-floating-card strong {
+            display: block;
+            color: #30252a;
+            margin-bottom: 5px;
         }
 
-        /* HERO IMAGE */
-
-        .home-visual {
-
-            position:
-                relative;
-
-            min-height:
-                600px;
-
-            animation:
-                homeImage 1s ease forwards;
+        .home-floating-card span {
+            color: #b85f7d;
+            font-size: 14px;
         }
-
-        @keyframes homeImage {
-
-            from {
-                opacity: 0;
-                transform: translateX(40px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateX(0);
-            }
-
-        }
-
-        .home-photo {
-
-            position:
-                absolute;
-
-            right:
-                0;
-
-            top:
-                0;
-
-            width:
-                88%;
-
-            height:
-                590px;
-
-            object-fit:
-                cover;
-
-            border-radius:
-                250px
-                250px
-                35px
-                35px;
-
-            box-shadow:
-                0 35px 90px
-                rgba(80,45,60,.18);
-        }
-
-        .home-photo-frame {
-
-            position:
-                absolute;
-
-            width:
-                88%;
-
-            height:
-                590px;
-
-            top:
-                18px;
-
-            right:
-                -18px;
-
-            border:
-                2px solid
-                rgba(212,127,153,.35);
-
-            border-radius:
-                250px
-                250px
-                35px
-                35px;
-
-            z-index:
-                -1;
-        }
-
-        .home-floating {
-
-            position:
-                absolute;
-
-            left:
-                -30px;
-
-            bottom:
-                45px;
-
-            background:
-                white;
-
-            padding:
-                22px;
-
-            border-radius:
-                20px;
-
-            box-shadow:
-                0 20px 60px
-                rgba(80,45,60,.15);
-
-            min-width:
-                220px;
-
-            z-index:
-                3;
-        }
-
-        .home-floating-top {
-
-            display:
-                flex;
-
-            align-items:
-                center;
-
-            gap:
-                12px;
-
-            margin-bottom:
-                10px;
-        }
-
-        .home-floating-icon {
-
-            width:
-                45px;
-
-            height:
-                45px;
-
-            border-radius:
-                50%;
-
-            background:
-                var(--light-pink);
-
-            display:
-                grid;
-
-            place-items:
-                center;
-
-            font-size:
-                22px;
-        }
-
-        .home-floating strong {
-
-            display:
-                block;
-
-            color:
-                var(--dark);
-
-            font-size:
-                15px;
-        }
-
-        .home-floating small {
-
-            color:
-                var(--grey);
-        }
-
-        .home-rating {
-
-            position:
-                absolute;
-
-            right:
-                -15px;
-
-            top:
-                90px;
-
-            background:
-                white;
-
-            padding:
-                16px 20px;
-
-            border-radius:
-                18px;
-
-            box-shadow:
-                0 20px 50px
-                rgba(80,45,60,.12);
-
-            z-index:
-                3;
-        }
-
-        .home-rating strong {
-
-            display:
-                block;
-
-            color:
-                var(--dark-pink);
-
-            font-size:
-                20px;
-        }
-
-        .home-rating span {
-
-            font-size:
-                12px;
-
-            color:
-                var(--grey);
-        }
-
-        /* STATS */
 
         .home-stats {
-
-            background:
-                white;
-
-            padding:
-                30px 0;
-
-            border-top:
-                1px solid
-                #f1e4e8;
-
-            border-bottom:
-                1px solid
-                #f1e4e8;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            background: #ffffff;
+            padding: 40px 8%;
+            box-shadow: 0 -10px 40px rgba(80, 45, 60, 0.05);
         }
 
-        .home-stats-grid {
-
-            display:
-                grid;
-
-            grid-template-columns:
-                repeat(4,1fr);
-
-            gap:
-                20px;
+        .home-stat {
+            text-align: center;
+            padding: 15px;
         }
 
-        .stat {
-
-            text-align:
-                center;
-
-            padding:
-                10px;
+        .home-stat strong {
+            display: block;
+            font-family: "Cormorant Garamond", serif;
+            font-size: 34px;
+            color: #b85f7d;
         }
 
-        .stat strong {
-
-            display:
-                block;
-
-            font-family:
-                "Cormorant Garamond",
-                serif;
-
-            font-size:
-                38px;
-
-            color:
-                var(--dark-pink);
+        .home-stat span {
+            color: #75676c;
+            font-size: 14px;
         }
 
-        .stat span {
-
-            font-size:
-                13px;
-
-            color:
-                var(--grey);
-
-            font-weight:
-                600;
+        .home-section {
+            padding: 90px 8%;
         }
 
-        /* FEATURED */
-
-        .home-featured {
-
-            padding:
-                100px 0;
+        .home-section-heading {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 50px;
         }
 
-        .home-featured-heading {
-
-            display:
-                flex;
-
-            justify-content:
-                space-between;
-
-            align-items:
-                end;
-
-            gap:
-                30px;
-
-            margin-bottom:
-                45px;
+        .home-section-heading span {
+            color: #b85f7d;
+            font-weight: 700;
+            letter-spacing: 2px;
+            font-size: 13px;
         }
 
-        .home-featured-heading h2 {
-
-            font-family:
-                "Cormorant Garamond",
-                serif;
-
-            font-size:
-                55px;
-
-            line-height:
-                .95;
-
-            max-width:
-                600px;
+        .home-section-heading h2 {
+            font-family: "Cormorant Garamond", serif;
+            font-size: 55px;
+            color: #30252a;
+            margin: 10px 0;
         }
 
-        .home-featured-heading p {
-
-            max-width:
-                430px;
-
-            color:
-                var(--grey);
+        .home-section-heading p {
+            color: #75676c;
+            line-height: 1.7;
         }
 
         .home-service-grid {
-
-            display:
-                grid;
-
-            grid-template-columns:
-                1.15fr
-                .85fr;
-
-            gap:
-                25px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
         }
 
-        .home-service {
-
-            position:
-                relative;
-
-            overflow:
-                hidden;
-
-            border-radius:
-                30px;
-
-            min-height:
-                450px;
-
-            box-shadow:
-                var(--shadow);
-
-            background:
-                white;
+        .home-service-card {
+            background: #ffffff;
+            border-radius: 25px;
+            overflow: hidden;
+            box-shadow: 0 15px 45px rgba(80, 45, 60, 0.08);
+            transition: 0.3s ease;
         }
 
-        .home-service.large {
-
-            min-height:
-                540px;
+        .home-service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 60px rgba(80, 45, 60, 0.15);
         }
 
-        .home-service img {
-
-            width:
-                100%;
-
-            height:
-                100%;
-
-            min-height:
-                450px;
-
-            object-fit:
-                cover;
-
-            transition:
-                .6s;
+        .home-service-card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
         }
 
-        .home-service:hover img {
-
-            transform:
-                scale(1.06);
+        .home-service-content {
+            padding: 25px;
         }
 
-        .home-service-overlay {
-
-            position:
-                absolute;
-
-            inset:
-                0;
-
-            background:
-                linear-gradient(
-                    to top,
-                    rgba(38,20,28,.82),
-                    transparent 60%
-                );
+        .home-service-content h3 {
+            font-family: "Cormorant Garamond", serif;
+            font-size: 30px;
+            margin-bottom: 10px;
         }
 
-        .home-service-info {
-
-            position:
-                absolute;
-
-            bottom:
-                28px;
-
-            left:
-                28px;
-
-            right:
-                28px;
-
-            color:
-                white;
+        .home-service-content p {
+            color: #75676c;
+            line-height: 1.7;
         }
 
-        .home-service-info small {
-
-            color:
-                var(--rose);
-
-            font-weight:
-                700;
-
-            letter-spacing:
-                1.5px;
+        .home-service-content a {
+            display: inline-block;
+            margin-top: 15px;
+            color: #b85f7d;
+            font-weight: 700;
         }
-
-        .home-service-info h3 {
-
-            font-family:
-                "Cormorant Garamond",
-                serif;
-
-            font-size:
-                38px;
-
-            margin:
-                4px 0 8px;
-        }
-
-        .home-service-info p {
-
-            font-size:
-                14px;
-
-            max-width:
-                500px;
-
-            opacity:
-                .9;
-        }
-
-        .home-service-info a {
-
-            display:
-                inline-block;
-
-            margin-top:
-                15px;
-
-            background:
-                white;
-
-            color:
-                var(--dark);
-
-            padding:
-                10px 17px;
-
-            border-radius:
-                25px;
-
-            font-size:
-                12px;
-
-            font-weight:
-                700;
-        }
-
-        .home-service-stack {
-
-            display:
-                grid;
-
-            grid-template-rows:
-                1fr
-                1fr;
-
-            gap:
-                25px;
-        }
-
-        .home-service-stack .home-service {
-
-            min-height:
-                258px;
-        }
-
-        .home-service-stack .home-service img {
-
-            min-height:
-                258px;
-        }
-
-        .home-service-stack
-        .home-service-info h3 {
-
-            font-size:
-                30px;
-        }
-
-        /* SHAPES */
 
         .home-shapes {
-
-            background:
-                linear-gradient(
-                    135deg,
-                    #fff1f5,
-                    #f3ebfa
-                );
-
-            padding:
-                100px 0;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
         }
 
-        .shape-showcase {
-
-            display:
-                grid;
-
-            grid-template-columns:
-                repeat(3,1fr);
-
-            gap:
-                22px;
+        .home-shape {
+            position: relative;
+            overflow: hidden;
+            border-radius: 25px;
+            height: 400px;
         }
 
-        .shape-card {
-
-            background:
-                rgba(255,255,255,.75);
-
-            padding:
-                12px;
-
-            border-radius:
-                28px;
-
-            box-shadow:
-                0 15px 45px
-                rgba(80,45,60,.07);
-
-            transition:
-                .35s;
+        .home-shape img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: 0.5s ease;
         }
 
-        .shape-card:hover {
-
-            transform:
-                translateY(-8px);
+        .home-shape:hover img {
+            transform: scale(1.08);
         }
 
-        .shape-card img {
-
-            height:
-                350px;
-
-            object-fit:
-                cover;
-
-            border-radius:
-                21px;
+        .home-shape-overlay {
+            position: absolute;
+            inset: auto 0 0;
+            padding: 30px;
+            color: #ffffff;
+            background: linear-gradient(transparent, rgba(0,0,0,0.75));
         }
 
-        .shape-card-content {
-
-            padding:
-                18px 10px 12px;
+        .home-shape-overlay h3 {
+            font-family: "Cormorant Garamond", serif;
+            font-size: 35px;
+            margin: 0;
         }
-
-        .shape-card-content h3 {
-
-            font-family:
-                "Cormorant Garamond",
-                serif;
-
-            font-size:
-                32px;
-        }
-
-        .shape-card-content p {
-
-            color:
-                var(--grey);
-
-            font-size:
-                14px;
-        }
-
-        /* HOME GALLERY */
 
         .home-gallery {
-
-            padding:
-                100px 0;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
         }
 
-        .home-gallery-grid {
-
-            display:
-                grid;
-
-            grid-template-columns:
-                repeat(4,1fr);
-
-            gap:
-                18px;
+        .home-gallery img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            border-radius: 20px;
+            transition: 0.3s ease;
         }
 
-        .home-gallery-item {
-
-            overflow:
-                hidden;
-
-            border-radius:
-                22px;
-
-            height:
-                330px;
-
-            box-shadow:
-                var(--shadow);
+        .home-gallery img:hover {
+            transform: scale(1.03);
         }
 
-        .home-gallery-item img {
-
-            width:
-                100%;
-
-            height:
-                100%;
-
-            object-fit:
-                cover;
-
-            transition:
-                .5s;
-        }
-
-        .home-gallery-item:hover img {
-
-            transform:
-                scale(1.08);
-        }
-
-        .home-gallery-item:nth-child(2) {
-
-            transform:
-                translateY(30px);
-        }
-
-        .home-gallery-item:nth-child(4) {
-
-            transform:
-                translateY(30px);
-        }
-
-        /* FINAL CTA */
-
-        .home-final {
-
-            position:
-                relative;
-
-            overflow:
-                hidden;
-
-            margin:
-                20px auto 90px;
-
-            width:
-                min(1150px,92%);
-
-            padding:
-                85px 40px;
-
-            border-radius:
-                40px;
-
-            text-align:
-                center;
-
+        .home-cta {
+            margin: 30px 8% 90px;
+            padding: 80px 30px;
+            text-align: center;
+            border-radius: 35px;
             background:
-                linear-gradient(
-                    135deg,
-                    #f8dce6,
-                    #eee4f7
-                );
+                radial-gradient(circle at top left, #f9dfe8, transparent 45%),
+                radial-gradient(circle at bottom right, #eee4f7, transparent 45%),
+                #fff8f5;
         }
 
-        .home-final::before {
-
-            content:
-                "♡";
-
-            position:
-                absolute;
-
-            font-family:
-                "Cormorant Garamond",
-                serif;
-
-            font-size:
-                220px;
-
-            color:
-                rgba(255,255,255,.35);
-
-            left:
-                -30px;
-
-            top:
-                -80px;
+        .home-cta h2 {
+            font-family: "Cormorant Garamond", serif;
+            font-size: 60px;
+            color: #30252a;
+            margin-bottom: 15px;
         }
 
-        .home-final::after {
-
-            content:
-                "✦";
-
-            position:
-                absolute;
-
-            font-size:
-                150px;
-
-            color:
-                rgba(255,255,255,.35);
-
-            right:
-                20px;
-
-            bottom:
-                -50px;
+        .home-cta p {
+            color: #75676c;
+            margin-bottom: 30px;
         }
 
-        .home-final h2 {
-
-            font-family:
-                "Cormorant Garamond",
-                serif;
-
-            font-size:
-                60px;
-
-            line-height:
-                1;
-
-            margin-bottom:
-                18px;
-
-            position:
-                relative;
-
-            z-index:
-                2;
-        }
-
-        .home-final p {
-
-            color:
-                var(--grey);
-
-            margin-bottom:
-                28px;
-
-            position:
-                relative;
-
-            z-index:
-                2;
-        }
-
-        .home-final a {
-
-            position:
-                relative;
-
-            z-index:
-                2;
-        }
-
-        /* MOBILE */
-
-        @media(max-width:900px) {
+        @media (max-width: 900px) {
 
             .home-hero {
-                min-height:
-                    auto;
-
-                padding:
-                    80px 0;
+                grid-template-columns: 1fr;
+                padding: 60px 5%;
             }
 
-            .home-hero-grid {
-
-                grid-template-columns:
-                    1fr;
-
+            .home-image-wrap img {
+                height: 500px;
             }
 
-            .home-visual {
-
-                min-height:
-                    520px;
+            .home-stats {
+                grid-template-columns: repeat(2, 1fr);
+                padding: 30px 5%;
             }
 
-            .home-photo,
-            .home-photo-frame {
-
-                width:
-                    90%;
-
-                height:
-                    500px;
+            .home-service-grid,
+            .home-shapes {
+                grid-template-columns: 1fr;
             }
 
-            .home-stats-grid {
-
-                grid-template-columns:
-                    repeat(2,1fr);
+            .home-gallery {
+                grid-template-columns: repeat(2, 1fr);
             }
 
-            .home-service-grid {
-
-                grid-template-columns:
-                    1fr;
+            .home-section {
+                padding: 70px 5%;
             }
-
-            .home-service-stack {
-
-                grid-template-columns:
-                    1fr 1fr;
-
-                grid-template-rows:
-                    1fr;
-            }
-
-            .shape-showcase {
-
-                grid-template-columns:
-                    repeat(2,1fr);
-            }
-
-            .home-gallery-grid {
-
-                grid-template-columns:
-                    repeat(2,1fr);
-            }
-
         }
 
-        @media(max-width:650px) {
+        @media (max-width: 600px) {
 
-            .home-content h1 {
-
-                font-size:
-                    55px;
+            .home-hero h1 {
+                font-size: 55px;
             }
 
-            .home-visual {
-
-                min-height:
-                    450px;
+            .home-image-wrap img {
+                height: 420px;
             }
 
-            .home-photo,
-            .home-photo-frame {
-
-                height:
-                    430px;
-
-                width:
-                    94%;
+            .home-floating-card {
+                left: 15px;
+                bottom: 15px;
             }
 
-            .home-floating {
-
-                left:
-                    5px;
-
-                bottom:
-                    20px;
+            .home-gallery {
+                grid-template-columns: 1fr;
             }
 
-            .home-rating {
-
-                right:
-                    0;
-
-                top:
-                    40px;
+            .home-cta {
+                margin: 20px 5% 60px;
+                padding: 60px 20px;
             }
 
-            .home-stats-grid {
-
-                grid-template-columns:
-                    1fr 1fr;
+            .home-cta h2 {
+                font-size: 45px;
             }
-
-            .home-featured-heading {
-
-                display:
-                    block;
-            }
-
-            .home-featured-heading h2 {
-
-                font-size:
-                    45px;
-
-                margin-bottom:
-                    15px;
-            }
-
-            .home-service-stack {
-
-                grid-template-columns:
-                    1fr;
-            }
-
-            .shape-showcase {
-
-                grid-template-columns:
-                    1fr;
-            }
-
-            .home-gallery-grid {
-
-                grid-template-columns:
-                    1fr 1fr;
-            }
-
-            .home-gallery-item {
-
-                height:
-                    250px;
-            }
-
-            .home-gallery-item:nth-child(2),
-            .home-gallery-item:nth-child(4) {
-
-                transform:
-                    none;
-            }
-
-            .home-final h2 {
-
-                font-size:
-                    45px;
-            }
-
         }
 
     </style>
@@ -1282,777 +406,461 @@
 
 <body>
 
-<!-- =========================
-     NAVIGATION
-========================= -->
+<!-- NAVIGATION -->
 
 <nav class="navbar">
 
-    <div class="container nav-inner">
+    <div class="logo">
+        Nails by Zittah
+    </div>
 
-        <a
-            href="index.html"
-            class="logo">
+    <div class="nav-links">
 
-            Nails
-            <span>by Zittah</span>
+        <a href="index.html" class="active">Home</a>
 
+        <a href="services.html">Services</a>
+
+        <a href="shapes.html">Shapes</a>
+
+        <a href="gallery.html">Gallery</a>
+
+        <a href="about.html">About</a>
+
+        <a href="contact.html">Contact</a>
+
+        <a href="booking.html" class="nav-book">
+            Book Now
         </a>
-
-        <div class="nav-links">
-
-            <a
-                href="index.html"
-                class="active">
-                Home
-            </a>
-
-            <a href="services.html">
-                Services
-            </a>
-
-            <a href="shapes.html">
-                Shapes
-            </a>
-
-            <a href="gallery.html">
-                Gallery
-            </a>
-
-            <a href="about.html">
-                About
-            </a>
-
-            <a href="contact.html">
-                Contact
-            </a>
-
-            <a
-                href="booking.html"
-                class="nav-book">
-                Book Now
-            </a>
-
-        </div>
 
     </div>
 
 </nav>
 
 
-<!-- =========================
-     HERO
-========================= -->
+<!-- HERO -->
 
 <section class="home-hero">
 
-    <div class="home-hero-grid">
-
-        <div class="home-content">
-
-            <div class="home-badge">
-
-                ✦
-                NAILS BY ZITTAH
-
-            </div>
-
-            <h1>
-
-                Your Nails.
-                <span>Your Confidence.</span>
-
-            </h1>
-
-            <p>
-
-                Elegant nail designs created to make
-                you feel beautiful, confident and
-                completely yourself.
-
-                From natural elegance to bold,
-                statement-making styles —
-                your perfect nails start here.
-
-            </p>
-
-            <div class="home-buttons">
-
-                <a
-                    href="booking.html"
-                    class="home-primary">
-
-                    Book Appointment
-                    →
-
-                </a>
-
-                <a
-                    href="gallery.html"
-                    class="home-secondary">
-
-                    Explore My Work
-
-                </a>
-
-            </div>
-
-        </div>
-
-
-        <div class="home-visual">
-
-            <img
-                src="images/home-nails.jpg"
-                alt="Beautiful nail design"
-                class="home-photo">
-
-            <div class="home-photo-frame"></div>
-
-
-            <div class="home-rating">
-
-                <strong>
-                    ✦ 5.0
-                </strong>
-
-                <span>
-                    Beautiful Nail Experience
-                </span>
-
-            </div>
-
-
-            <div class="home-floating">
-
-                <div class="home-floating-top">
-
-                    <div class="home-floating-icon">
-                        💅
-                    </div>
-
-                    <div>
-
-                        <strong>
-                            Premium Nail Care
-                        </strong>
-
-                        <small>
-                            Clean • Stylish • Elegant
-                        </small>
-
-                    </div>
-
-                </div>
-
-                <small>
-                    Designed specially for you ♡
-                </small>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =========================
-     STATS
-========================= -->
-
-<section class="home-stats">
-
-    <div class="container">
-
-        <div class="home-stats-grid">
-
-            <div class="stat">
-
-                <strong>
-                    100%
-                </strong>
-
-                <span>
-                    Beauty Focused
-                </span>
-
-            </div>
-
-            <div class="stat">
-
-                <strong>
-                    3+
-                </strong>
-
-                <span>
-                    Signature Shapes
-                </span>
-
-            </div>
-
-            <div class="stat">
-
-                <strong>
-                    ♡
-                </strong>
-
-                <span>
-                    Personal Style
-                </span>
-
-            </div>
-
-            <div class="stat">
-
-                <strong>
-                    ✦
-                </strong>
-
-                <span>
-                    Attention to Detail
-                </span>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =========================
-     FEATURED SERVICES
-========================= -->
-
-<section class="home-featured">
-
-    <div class="container">
-
-        <div class="home-featured-heading">
-
-            <div>
-
-                <div class="eyebrow">
-                    SIGNATURE SERVICES
-                </div>
-
-                <h2>
-                    Nail Looks Made
-                    For Your Style.
-                </h2>
-
-            </div>
-
-            <p>
-
-                Whether you want something soft and
-                elegant or bold and unforgettable,
-                choose a look that feels like you.
-
-            </p>
-
-        </div>
-
-
-        <div class="home-service-grid">
-
-            <!-- LARGE -->
-
-            <div class="home-service large">
-
-                <img
-                    src="https://thepinkissue.com/wp-content/uploads/2025/09/Almond-fall-nail-ideas.jpg"
-                    alt="Almond nail design">
-
-                <div class="home-service-overlay"></div>
-
-                <div class="home-service-info">
-
-                    <small>
-                        MOST LOVED
-                    </small>
-
-                    <h3>
-                        Gel on Natural Nails
-                    </h3>
-
-                    <p>
-                        Clean, glossy and elegant.
-                        Perfect for a timeless everyday look.
-                    </p>
-
-                    <a
-                        href="booking.html?service=Gel%20on%20Natural%20Nails">
-
-                        Book This Look
-
-                    </a>
-
-                </div>
-
-            </div>
-
-
-            <!-- STACK -->
-
-            <div class="home-service-stack">
-
-                <div class="home-service">
-
-                    <img
-                        src="https://nailsforconfidence.com/wp-content/uploads/2025/07/5-fall-stiletto-nail-art-design.jpg"
-                        alt="Stiletto nail design">
-
-                    <div class="home-service-overlay"></div>
-
-                    <div class="home-service-info">
-
-                        <small>
-                            BOLD & BEAUTIFUL
-                        </small>
-
-                        <h3>
-                            Tips + Gel
-                        </h3>
-
-                        <p>
-                            Beautiful length with
-                            a glamorous finish.
-                        </p>
-
-                        <a
-                            href="booking.html?service=Tips%20%2B%20Gel">
-
-                            Explore
-
-                        </a>
-
-                    </div>
-
-                </div>
-
-
-                <div class="home-service">
-
-                    <img
-                        src="https://www.instyle.com/thmb/RQlxj5Fkp6_SUbH6SBDZaYMpquI=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Squarenails-dcefe777703c4f168eab9023bb034ae7.jpg"
-                        alt="Square nail design">
-
-                    <div class="home-service-overlay"></div>
-
-                    <div class="home-service-info">
-
-                        <small>
-                            CLASSIC
-                        </small>
-
-                        <h3>
-                            Custom Shapes
-                        </h3>
-
-                        <p>
-                            Square, Almond or Stiletto.
-                        </p>
-
-                        <a href="shapes.html">
-
-                            Choose Shape
-
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =========================
-     SHAPES
-========================= -->
-
-<section class="home-shapes">
-
-    <div class="container">
-
-        <div class="section-heading">
-
-            <div class="eyebrow">
-                FIND YOUR SHAPE
-            </div>
-
-            <h2>
-                Which Nail Shape
-                Is You?
-            </h2>
-
-            <p>
-                Your nail shape can completely
-                transform your look.
-            </p>
-
-        </div>
-
-
-        <div class="shape-showcase">
-
-
-            <!-- SQUARE -->
-
-            <div class="shape-card">
-
-                <img
-                    src="https://www.instyle.com/thmb/RQlxj5Fkp6_SUbH6SBDZaYMpquI=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Squarenails-dcefe777703c4f168eab9023bb034ae7.jpg"
-                    alt="Square Nails">
-
-                <div class="shape-card-content">
-
-                    <div class="eyebrow">
-                        CLASSIC
-                    </div>
-
-                    <h3>
-                        Square
-                    </h3>
-
-                    <p>
-                        Clean, neat and timeless.
-                    </p>
-
-                    <br>
-
-                    <a
-                        href="booking.html?shape=Square"
-                        class="btn btn-secondary">
-
-                        Choose Square
-
-                    </a>
-
-                </div>
-
-            </div>
-
-
-            <!-- ALMOND -->
-
-            <div class="shape-card">
-
-                <img
-                    src="https://thepinkissue.com/wp-content/uploads/2025/09/Almond-fall-nail-ideas.jpg"
-                    alt="Almond Nails">
-
-                <div class="shape-card-content">
-
-                    <div class="eyebrow">
-                        TRENDING
-                    </div>
-
-                    <h3>
-                        Almond
-                    </h3>
-
-                    <p>
-                        Feminine, elegant and flattering.
-                    </p>
-
-                    <br>
-
-                    <a
-                        href="booking.html?shape=Almond"
-                        class="btn btn-secondary">
-
-                        Choose Almond
-
-                    </a>
-
-                </div>
-
-            </div>
-
-
-            <!-- STILETTO -->
-
-            <div class="shape-card">
-
-                <img
-                    src="https://nailsforconfidence.com/wp-content/uploads/2025/07/5-fall-stiletto-nail-art-design.jpg"
-                    alt="Stiletto Nails">
-
-                <div class="shape-card-content">
-
-                    <div class="eyebrow">
-                        BOLD
-                    </div>
-
-                    <h3>
-                        Stiletto
-                    </h3>
-
-                    <p>
-                        Dramatic, confident and unforgettable.
-                    </p>
-
-                    <br>
-
-                    <a
-                        href="booking.html?shape=Stiletto"
-                        class="btn btn-secondary">
-
-                        Choose Stiletto
-
-                    </a>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =========================
-     GALLERY PREVIEW
-========================= -->
-
-<section class="home-gallery">
-
-    <div class="container">
-
-        <div class="section-heading">
-
-            <div class="eyebrow">
-                NAIL INSPIRATION
-            </div>
-
-            <h2>
-                A Little Taste
-                of My Work
-            </h2>
-
-            <p>
-                Find your next favourite nail look.
-            </p>
-
-        </div>
-
-
-        <div class="home-gallery-grid">
-
-            <div class="home-gallery-item">
-
-                <img
-                    src="https://thepinkissue.com/wp-content/uploads/2025/09/Almond-fall-nail-ideas.jpg"
-                    alt="Almond Nails">
-
-            </div>
-
-            <div class="home-gallery-item">
-
-                <img
-                    src="https://nailsforconfidence.com/wp-content/uploads/2025/07/5-fall-stiletto-nail-art-design.jpg"
-                    alt="Stiletto Nails">
-
-            </div>
-
-            <div class="home-gallery-item">
-
-                <img
-                    src="https://www.instyle.com/thmb/RQlxj5Fkp6_SUbH6SBDZaYMpquI=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Squarenails-dcefe777703c4f168eab9023bb034ae7.jpg"
-                    alt="Square Nails">
-
-            </div>
-
-            <div class="home-gallery-item">
-
-                <img
-                    src="https://images.unsplash.com/photo-1610992015732-2449b76344bc?auto=format&fit=crop&w=1000&q=85"
-                    alt="Glossy Gel Nails">
-
-            </div>
-
-        </div>
-
-
-        <div style="
-            text-align:center;
-            margin-top:55px;
-        ">
-
-            <a
-                href="gallery.html"
-                class="btn btn-primary">
-
-                View Full Gallery
-
+    <div class="home-hero-content">
+
+        <span class="home-badge">
+            NAILS BY ZITTAH
+        </span>
+
+        <h1>
+            Your Nails.<br>
+            <span>Your Confidence.</span>
+        </h1>
+
+        <p>
+            Discover beautiful, elegant and creative nail designs
+            made to express your personality. From glossy gel nails
+            to stunning almond, square and stiletto styles.
+        </p>
+
+        <div class="home-buttons">
+
+            <a href="booking.html" class="btn">
+                Book Your Appointment
+            </a>
+
+            <a href="gallery.html" class="btn btn-outline">
+                Explore Gallery
             </a>
 
         </div>
 
     </div>
 
-</section>
 
+    <div class="home-image-wrap">
 
-<!-- =========================
-     FINAL CTA
-========================= -->
+        <img
+            src="images/home-nails.jpg"
+            alt="Beautiful nail design by Nails by Zittah"
+        >
 
-<section class="home-final">
+        <div class="home-floating-card">
 
-    <div class="eyebrow">
-        YOUR NEXT NAIL LOOK
+            <strong>
+                Premium Nail Care
+            </strong>
+
+            <span>
+                Beautiful • Elegant • Creative
+            </span>
+
+        </div>
+
     </div>
 
-    <h2>
-        Ready to Feel
-        Beautiful?
-    </h2>
+</section>
 
-    <p>
-        Let's create nails that make
-        you smile every time you look at them.
-    </p>
 
-    <a
-        href="booking.html"
-        class="btn btn-primary">
+<!-- STATS -->
 
-        Book Your Appointment
+<section class="home-stats">
 
-    </a>
+    <div class="home-stat">
+        <strong>100%</strong>
+        <span>Beauty Focused</span>
+    </div>
+
+    <div class="home-stat">
+        <strong>3+</strong>
+        <span>Signature Shapes</span>
+    </div>
+
+    <div class="home-stat">
+        <strong>∞</strong>
+        <span>Creative Designs</span>
+    </div>
+
+    <div class="home-stat">
+        <strong>♥</strong>
+        <span>Attention to Detail</span>
+    </div>
 
 </section>
 
 
-<!-- =========================
-     FOOTER
-========================= -->
+<!-- SERVICES -->
 
-<footer>
+<section class="home-section">
 
-    <div class="container">
+    <div class="home-section-heading">
 
-        <div class="footer-grid">
+        <span>
+            WHAT I OFFER
+        </span>
 
-            <div>
+        <h2>
+            Beautiful Nails, Made For You
+        </h2>
+
+        <p>
+            Choose a style that matches your personality,
+            occasion and everyday look.
+        </p>
+
+    </div>
+
+
+    <div class="home-service-grid">
+
+        <article class="home-service-card">
+
+            <img
+                src="https://thepinkissue.com/wp-content/uploads/2025/09/Almond-fall-nail-ideas.jpg"
+                alt="Almond gel nail design"
+                loading="lazy"
+            >
+
+            <div class="home-service-content">
 
                 <h3>
-                    Nails by Zittah
+                    Gel on Natural Nails
                 </h3>
 
                 <p>
-                    Beautiful nails.
-                    Beautiful confidence.
+                    Elegant glossy gel finishes designed
+                    to complement your natural nails.
                 </p>
 
-                <br>
-
-                <p>
-                    Your style.
-                    Your beauty.
-                    Your moment.
-                </p>
+                <a href="booking.html?service=Gel%20on%20Natural%20Nails">
+                    Book this service →
+                </a>
 
             </div>
 
+        </article>
 
-            <div class="footer-links">
 
-                <h4>
-                    Quick Links
-                </h4>
+        <article class="home-service-card">
 
-                <a href="index.html">
-                    Home
+            <img
+                src="https://nailsforconfidence.com/wp-content/uploads/2025/07/5-fall-stiletto-nail-art-design.jpg"
+                alt="Stiletto tips and gel nail design"
+                loading="lazy"
+            >
+
+            <div class="home-service-content">
+
+                <h3>
+                    Tips + Gel
+                </h3>
+
+                <p>
+                    Add beautiful length and finish it
+                    with your favourite gel colour.
+                </p>
+
+                <a href="booking.html?service=Tips%20%2B%20Gel">
+                    Book this service →
                 </a>
 
-                <a href="services.html">
-                    Services
-                </a>
+            </div>
+
+        </article>
+
+
+        <article class="home-service-card">
+
+            <img
+                src="https://www.instyle.com/thmb/RQlxj5Fkp6_SUbH6SBDZaYMpquI=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Squarenails-dcefe777703c4f168eab9023bb034ae7.jpg"
+                alt="Square nail design"
+                loading="lazy"
+            >
+
+            <div class="home-service-content">
+
+                <h3>
+                    Custom Shapes
+                </h3>
+
+                <p>
+                    Choose square, almond or stiletto
+                    and create a look that feels uniquely yours.
+                </p>
 
                 <a href="shapes.html">
-                    Shapes
-                </a>
-
-                <a href="gallery.html">
-                    Gallery
-                </a>
-
-                <a href="about.html">
-                    About
-                </a>
-
-                <a href="contact.html">
-                    Contact
+                    Explore shapes →
                 </a>
 
             </div>
 
-
-            <div>
-
-                <h4>
-                    Book & Contact
-                </h4>
-
-                <p>
-                    +254 798 573 731
-                </p>
-
-                <br>
-
-                <a
-                    href="https://wa.me/254798573731"
-                    target="_blank"
-                    class="btn btn-primary">
-
-                    WhatsApp Me
-
-                </a>
-
-            </div>
-
-        </div>
-
-
-        <div class="copyright">
-
-            © 2026 Nails by Zittah.
-            All Rights Reserved.
-
-        </div>
+        </article>
 
     </div>
 
-</footer>
+</section>
+
+
+<!-- SHAPES -->
+
+<section class="home-section">
+
+    <div class="home-section-heading">
+
+        <span>
+            FIND YOUR STYLE
+        </span>
+
+        <h2>
+            Signature Nail Shapes
+        </h2>
+
+        <p>
+            Different shapes create different personalities.
+            Find the one that fits you best.
+        </p>
+
+    </div>
+
+
+    <div class="home-shapes">
+
+        <a href="shapes.html">
+
+            <div class="home-shape">
+
+                <img
+                    src="https://www.instyle.com/thmb/RQlxj5Fkp6_SUbH6SBDZaYMpquI=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Squarenails-dcefe777703c4f168eab9023bb034ae7.jpg"
+                    alt="Square nail shape"
+                    loading="lazy"
+                >
+
+                <div class="home-shape-overlay">
+
+                    <h3>
+                        Square
+                    </h3>
+
+                    <p>
+                        Clean & classic
+                    </p>
+
+                </div>
+
+            </div>
+
+        </a>
+
+
+        <a href="shapes.html">
+
+            <div class="home-shape">
+
+                <img
+                    src="https://thepinkissue.com/wp-content/uploads/2025/09/Almond-fall-nail-ideas.jpg"
+                    alt="Almond nail shape"
+                    loading="lazy"
+                >
+
+                <div class="home-shape-overlay">
+
+                    <h3>
+                        Almond
+                    </h3>
+
+                    <p>
+                        Elegant & feminine
+                    </p>
+
+                </div>
+
+            </div>
+
+        </a>
+
+
+        <a href="shapes.html">
+
+            <div class="home-shape">
+
+                <img
+                    src="https://nailsforconfidence.com/wp-content/uploads/2025/07/5-fall-stiletto-nail-art-design.jpg"
+                    alt="Stiletto nail shape"
+                    loading="lazy"
+                >
+
+                <div class="home-shape-overlay">
+
+                    <h3>
+                        Stiletto
+                    </h3>
+
+                    <p>
+                        Bold & dramatic
+                    </p>
+
+                </div>
+
+            </div>
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- GALLERY -->
+
+<section class="home-section">
+
+    <div class="home-section-heading">
+
+        <span>
+            NAIL INSPIRATION
+        </span>
+
+        <h2>
+            Explore My Gallery
+        </h2>
+
+        <p>
+            Get inspired before choosing your next nail look.
+        </p>
+
+    </div>
+
+
+    <div class="home-gallery">
+
+        <img
+            src="https://thepinkissue.com/wp-content/uploads/2025/09/Almond-fall-nail-ideas.jpg"
+            alt="Almond nail inspiration"
+            loading="lazy"
+        >
+
+        <img
+            src="https://nailsforconfidence.com/wp-content/uploads/2025/07/5-fall-stiletto-nail-art-design.jpg"
+            alt="Stiletto nail inspiration"
+            loading="lazy"
+        >
+
+        <img
+            src="https://www.instyle.com/thmb/RQlxj5Fkp6_SUbH6SBDZaYMpquI=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Squarenails-dcefe777703c4f168eab9023bb034ae7.jpg"
+            alt="Square nail inspiration"
+            loading="lazy"
+        >
+
+        <img
+            src="https://images.unsplash.com/photo-1610992015732-2449b76344bc?auto=format&fit=crop&w=1000&q=85"
+            alt="Glossy gel nail design"
+            loading="lazy"
+        >
+
+    </div>
+
+</section>
+
+
+<!-- CALL TO ACTION -->
+
+<section class="home-cta">
+
+    <h2>
+        Ready for Your Next Nail Look?
+    </h2>
+
+    <p>
+        Choose your favourite style and book your appointment today.
+    </p>
+
+    <a href="booking.html" class="btn">
+        Book Your Appointment
+    </a>
+
+</section>
 
 
 <!-- WHATSAPP -->
 
 <a
     href="https://wa.me/254798573731"
-    class="whatsapp"
+    class="whatsapp-float"
     target="_blank"
-    aria-label="Chat with Nails by Zittah on WhatsApp">
-
-    ☎
-
+    rel="noopener"
+    aria-label="Chat with Nails by Zittah on WhatsApp"
+>
+    WhatsApp
 </a>
 
 
-</body>
+<!-- FOOTER -->
 
+<footer class="footer">
+
+    <div class="footer-inner">
+
+        <h2>
+            Nails by Zittah
+        </h2>
+
+        <p>
+            Beautiful nails. Beautiful confidence.
+        </p>
+
+        <div class="footer-links">
+
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="shapes.html">Shapes</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+
+        </div>
+
+        <p class="footer-copy">
+            © 2026 Nails by Zittah. All rights reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+</body>
 </html>
