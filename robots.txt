@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nailsbyzittah.netlify.app/sitemap.xml
