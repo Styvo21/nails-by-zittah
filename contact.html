@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact | Nails by Zittah</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+
+    <div class="container nav-inner">
+
+        <a href="index.html" class="logo">
+            Nails <span>by Zittah</span>
+        </a>
+
+        <div class="nav-links">
+
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="shapes.html">Shapes</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="about.html">About</a>
+            <a href="contact.html" class="active">Contact</a>
+            <a href="booking.html" class="nav-book">Book Now</a>
+
+        </div>
+
+    </div>
+
+</nav>
+
+<section class="page-hero">
+
+    <div class="container">
+
+        <div class="eyebrow">GET IN TOUCH</div>
+
+        <h1>Contact Zittah</h1>
+
+        <p>
+            Have a question? I'd love to hear from you.
+        </p>
+
+    </div>
+
+</section>
+
+<section class="section">
+
+    <div class="container contact-grid">
+
+        <div class="contact-box">
+
+            <div class="eyebrow">CONTACT ME</div>
+
+            <h2>Let's Talk Nails</h2>
+
+            <div class="contact-item">
+
+                <strong>WhatsApp</strong>
+
+                <a
+                    href="https://wa.me/254798573731"
+                    target="_blank">
+                    +254 798 573 731
+                </a>
+
+            </div>
+
+            <div class="contact-item">
+
+                <strong>Phone</strong>
+
+                <a href="tel:+254798573731">
+                    +254 798 573 731
+                </a>
+
+            </div>
+
+            <div class="contact-item">
+
+                <strong>Appointments</strong>
+
+                <p>
+                    Contact me to discuss your preferred
+                    service, shape and appointment time.
+                </p>
+
+            </div>
+
+            <br>
+
+            <a
+                href="https://wa.me/254798573731"
+                target="_blank"
+                class="btn btn-primary">
+                Chat on WhatsApp
+            </a>
+
+        </div>
+
+        <div class="contact-box">
+
+            <div class="eyebrow">SEND A MESSAGE</div>
+
+            <h2>Message Me</h2>
+
+            <form id="contactForm">
+
+                <div class="form-group">
+
+                    <label>Your Name</label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        required
+                        placeholder="Enter your name">
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>Phone Number</label>
+
+                    <input
+                        type="tel"
+                        id="phone"
+                        required
+                        placeholder="07XXXXXXXX">
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>Service</label>
+
+                    <select id="service">
+
+                        <option value="Gel on Natural Nails">
+                            Gel on Natural Nails
+                        </option>
+
+                        <option value="Tips + Gel">
+                            Tips + Gel
+                        </option>
+
+                        <option value="Nail Shape">
+                            Nail Shape
+                        </option>
+
+                        <option value="Other">
+                            Other
+                        </option>
+
+                    </select>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>Message</label>
+
+                    <textarea
+                        id="message"
+                        placeholder="Write your message..."></textarea>
+
+                </div>
+
+                <button
+                    type="submit"
+                    class="btn btn-primary">
+                    Send on WhatsApp
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+<div class="cta">
+
+    <h2>Ready to Book?</h2>
+
+    <p>
+        Choose your service and preferred appointment details.
+    </p>
+
+    <a href="booking.html" class="btn btn-primary">
+        Book Appointment
+    </a>
+
+</div>
+
+<footer>
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div>
+                <h3>Nails by Zittah</h3>
+                <p>Beautiful nails. Beautiful confidence.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Pages</h4>
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="gallery.html">Gallery</a>
+            </div>
+
+            <div>
+                <h4>WhatsApp</h4>
+                <p>+254 798 573 731</p>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            © 2026 Nails by Zittah. All Rights Reserved.
+        </div>
+
+    </div>
+
+</footer>
+
+<a
+    href="https://wa.me/254798573731"
+    class="whatsapp"
+    target="_blank">
+    ☎
+</a>
+
+<script>
+
+document
+.getElementById("contactForm")
+.addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+    const name =
+        document.getElementById("name").value;
+
+    const phone =
+        document.getElementById("phone").value;
+
+    const service =
+        document.getElementById("service").value;
+
+    const message =
+        document.getElementById("message").value;
+
+    const whatsappMessage =
+`Hello Zittah! 💗
+
+I would like to contact you.
+
+Name: ${name}
+Phone: ${phone}
+Service: ${service}
+
+Message:
+${message || "No additional message."}
+
+Thank you!`;
+
+    window.open(
+        "https://wa.me/254798573731?text=" +
+        encodeURIComponent(whatsappMessage),
+        "_blank"
+    );
+
+});
+
+</script>
+
+</body>
+</html>
